@@ -1,0 +1,156 @@
+$b:black;
+$cw:white;
+$dfont:helvetica;
+
+@function sum($num1,$num2){
+	@return $num1 + $num2
+}
+
+*{font-family: $dfont}
+
+@mixin body($bcolor, $tcolor){
+	background-color:$bcolor;
+    color:$tcolor;
+}
+@mixin floatinleftbuttons(){
+	float:left;
+	cursor:pointer;
+}
+  body {
+  	@include body($b, $cw)
+  }
+  #releasebutton {
+  	@include floatinleftbuttons()
+  }
+  #usedbutton {
+  	@include floatinleftbuttons()
+  }
+  #contactbutton {
+  	@include floatinleftbuttons()
+  }
+#skull1{
+	float:left
+}
+#skull2{
+	float:left
+}
+ #home-message{
+ 	padding: sum(5,5)
+ }
+ #logo-banner{
+ 	position:absolute;
+   	top: 40%;
+    left: 50%;
+    width:600px;
+    height:150px;
+    margin-top:-75px;
+    margin-left:-300px;
+    max-width:100%;
+ }
+ #home-menu{
+ 	position:absolute;
+   	top: 60%;
+    left: 50%;
+    width:800px;
+    height:54px;
+    margin:-27px 0 0 -400px;
+    max-width:100%;
+ }
+#releases-title{
+ 	position:absolute;
+   	top: 20%;
+    left: 50%;
+    width:400px;
+    height:70px;
+    margin:-35px 0 0 -200px;
+    max-width:100%;
+ }
+ #vinyl-title{
+ 	position:absolute;
+   	top: 20%;
+    left: 50%;
+    width:400px;
+    height:70px;
+    margin:-35px 0 0 -200px;
+    max-width:100%;
+ }
+ #contact-title{
+ 	position:absolute;
+   	top: 20%;
+    left: 50%;
+    width:400px;
+    height:70px;
+    margin:-35px 0 0 -200px;
+    max-width:100%;
+ }
+ .logo-link-banner{
+ 	position:absolute;
+   	top: 10%;
+    left: 80%;
+    width:300px;
+    height:75px;
+    margin:-37px 0 0 -150px;
+    max-width:100%;
+    cursor:pointer;
+ }
+  #carousel1{
+ 	position:absolute;
+   	top: 40%;
+    left: 50%;
+    width:600px;
+    height:132px;
+    margin:-66px 0 0 -300px;
+    max-width:100%;
+ }
+  #left-but{
+  	text-align:center;
+ 	position:absolute;
+   	top: 70%;
+    left: 10%;
+    width:50px;
+    height:30px;
+    margin:-15px 0 0 -25px;
+    max-width:100%;
+    cursor:pointer;
+ }
+  #right-but{
+  	text-align:center;
+ 	position:absolute;
+   	top: 70%;
+    left: 90%;
+    width:50px;
+    height:30px;
+    margin:-15px 0 0 -25px;
+    max-width:100%;
+    cursor:pointer;
+ }
+#usedbutton-releases {
+  	@include floatinleftbuttons()
+  }
+#contactbutton-releases {
+  	@include floatinleftbuttons()
+  }
+#skull2-releases{
+	float:left
+}
+#releasebutton-vinyl {
+  	@include floatinleftbuttons()
+  }
+#contactbutton-vinyl {
+  	@include floatinleftbuttons()
+  }
+#skull2-vinyl{
+	float:left
+}
+#releasebutton-contact {
+  	@include floatinleftbuttons()
+  }
+#usedbutton-contact {
+  	@include floatinleftbuttons()
+  }
+#skull2-contact{
+	float:left
+}
+ #home-message{
+ 	padding: sum(5,5)
+ }

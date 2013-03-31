@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  release_id: MyString
+  used_vinyl_id: MyString
+  user_id: MyString
+
+two:
+  release_id: MyString
+  used_vinyl_id: MyString
+  user_id: MyString

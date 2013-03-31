@@ -1,0 +1,33 @@
+<h1>Listing used_vinyls</h1>
+
+<table>
+  <tr>
+    <th>Album</th>
+    <th>Artist</th>
+    <th>Type</th>
+    <th>Purchased</th>
+    <th>Price</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @used_vinyls.each do |used_vinyl| %>
+  <tr>
+    <td><%= used_vinyl.album %></td>
+    <td><%= used_vinyl.artist %></td>
+    <td><%= used_vinyl.type %></td>
+    <td><%= used_vinyl.purchased %></td>
+    <td><%= used_vinyl.price %></td>
+    <td><%= used_vinyl.price %></td>
+    <td><%= link_to 'Show', used_vinyl %></td>
+    <td><%= link_to 'Edit', edit_used_vinyl_path(used_vinyl) %></td>
+    <td><%= link_to 'Destroy', used_vinyl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Used vinyl', new_used_vinyl_path %>

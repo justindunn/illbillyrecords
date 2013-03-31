@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Album:</b>
+  <%= @used_vinyl.album %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%= @used_vinyl.artist %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @used_vinyl.type %>
+</p>
+
+<p>
+  <b>Purchased:</b>
+  <%= @used_vinyl.purchased %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @used_vinyl.price %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @used_vinyl.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_used_vinyl_path(@used_vinyl) %> |
+<%= link_to 'Back', used_vinyls_path %>

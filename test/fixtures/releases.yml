@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cover: MyString
+  album: MyString
+  artist: MyString
+  price: 
+  price: 
+  purchasable: false
+
+two:
+  cover: MyString
+  album: MyString
+  artist: MyString
+  price: 
+  price: 
+  purchasable: false

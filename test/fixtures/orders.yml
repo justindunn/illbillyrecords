@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: MyString
+  shipping_option_id: MyString
+  payment_method_id: MyString
+  totalprice: 
+  totalprice: 
+
+two:
+  user_id: MyString
+  shipping_option_id: MyString
+  payment_method_id: MyString
+  totalprice: 
+  totalprice: 

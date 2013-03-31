@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  release_id: MyString
+  songname: MyString
+  mp3file: MyString
+  track_length: MyString
+
+two:
+  release_id: MyString
+  songname: MyString
+  mp3file: MyString
+  track_length: MyString

@@ -1,0 +1,56 @@
+<div id="home">
+	<div id="logo-banner"><%= image_tag "homelogo.png" %></div>
+	<div id="home-menu">
+		<div id="releasebutton"><%= image_tag "/images/releasesbutton.png", :id => 'releaseimage' %></div>
+		<div id="skull1"><%= image_tag "/images/skullsblack.png", :id => 'skullpic1' %></div>
+		<div id="usedbutton"><%= image_tag "/images/usedbutton.png", :id => 'usedimage' %></div>
+		<div id="skull2"><%= image_tag "/images/skullsblack.png", :id => 'skullpic2' %></div>
+		<div id="contactbutton"><%= image_tag "/images/contactbutton.png", :id => 'contactimage' %></div>
+	</div>
+</div>
+<div id="releases">
+	<div id="release-top-bar">
+		<div class="logo-link-banner"><%= image_tag "/images/homelogosmall.png", :id => 'banner-releases' %></div>
+		<div id="release-menu">
+			<div id="usedbutton-releases"><%= image_tag "/images/usedbutton.png", :id => 'usedimage-releases' %></div>
+			<div id="skull2-releases"><%= image_tag "/images/skullsblack.png", :id => 'skullpic2-releases' %></div>
+			<div id="contactbutton-releases"><%= image_tag "/images/contactbutton.png", :id => 'contactimage-releases' %></div>
+		</div>
+		<div id="releases-title"><%= image_tag "/images/releases-title.png", :id => 'releasetitle' %></div>
+	</div>
+	<div id="carousel1">
+		<% @releases.each do |release| %>
+			<img class = "cloudcarousel" src="<%=release.cover%>">
+			<% if release.purchasable %>
+			<% else %>
+			<%=release.artist%>
+			<%=release.album%>
+			<%=release.price%>
+			<% end %>
+		<% end %>
+	</div>
+	<div id="left-but"><%= image_tag "/images/skullsblack.png" %>Go Left</div>
+	<div id="right-but"><%= image_tag "/images/skullsblack.png" %>Go Right</div>
+</div>
+<div id="vinyl">
+	<div id="vinyl-top-bar">
+		<div class="logo-link-banner"><%= image_tag "/images/homelogosmall.png", :id => 'banner-vinyl' %></div>
+		<div id="vinyl-menu">
+			<div id="releasebutton-vinyl"><%= image_tag "/images/releasesbutton.png", :id => 'releaseimage-vinyl' %></div>
+			<div id="skull2-vinyl"><%= image_tag "/images/skullsblack.png", :id => 'skullpic2-vinyl' %></div>
+			<div id="contactbutton-vinyl"><%= image_tag "/images/contactbutton.png", :id => 'contactimage-vinyl' %></div>
+		</div>
+		<div id="vinyl-title"><%= image_tag "/images/vinyl-title.png", :id => 'vinyltitle' %></div>
+	</div>
+</div>
+<div id="contact">
+	<div id="contact-top-bar">
+		<div class="logo-link-banner"><%= image_tag "/images/homelogosmall.png", :id => 'banner-contact' %></div>
+		<div id="vinyl-menu">
+			<div id="releasebutton-contact"><%= image_tag "/images/releasesbutton.png", :id => 'releaseimage-contact' %></div>
+			<div id="skull2-contact"><%= image_tag "/images/skullsblack.png", :id => 'skullpic2-contact' %></div>
+			<div id="usedbutton-contact"><%= image_tag "/images/usedbutton.png", :id => 'usedimage-contact' %></div>
+		</div>
+		<div id="contact-title"><%= image_tag "/images/contact-title.png", :id => 'contacttitle' %></div>
+	</div>
+</div>

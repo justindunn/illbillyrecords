@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cover:</b>
+  <%= @release.cover %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%= @release.album %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%= @release.artist %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @release.price %>
+</p>
+
+<p>
+  <b>Purchasable:</b>
+  <%= @release.purchasable %>
+</p>
+
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>

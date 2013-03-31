@@ -1,0 +1,31 @@
+<h1>Listing releases</h1>
+
+<table>
+  <tr>
+    <th>Cover</th>
+    <th>Album</th>
+    <th>Artist</th>
+    <th>Price</th>
+    <th>Purchasable</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @releases.each do |release| %>
+  <tr>
+    <td><%= release.cover %></td>
+    <td><%= release.album %></td>
+    <td><%= release.artist %></td>
+    <td><%= release.price %></td>
+    <td><%= release.purchasable %></td>
+    <td><%= link_to 'Show', release %></td>
+    <td><%= link_to 'Edit', edit_release_path(release) %></td>
+    <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Release', new_release_path %>
